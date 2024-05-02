@@ -92,8 +92,10 @@ body {
 	--color-orange: #ec7500;
 	--color-yellow-rgb: 224, 172, 0;
 	--color-yellow: #e0ac00;
-	--color-green-rgb: 8, 185, 78;
-	--color-green: #08b94e;
+	--color-green-rgb: 5,
+		144,
+		61;
+	--color-green: #05903d;
 	--color-cyan-rgb: 0, 191, 188;
 	--color-cyan: #00bfbc;
 	--color-blue-rgb: 8, 109, 221;
@@ -160,6 +162,8 @@ body {
 
 .inline-title {
 	color: #335b8a;
+	border-block-end: var(--divider-width) solid;
+	padding: 1em;
 }
 
 ::-webkit-scrollbar {
