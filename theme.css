@@ -1,3 +1,5 @@
+
+
 body {
 	/*--radius-s: 0px;
 	--radius-m: 0px;
@@ -7,10 +9,16 @@ body {
 	--checkbox-radius: 0px;
 	--toggle-radius: 0px;
 	--toggle-thumb-radius: 0px;
-	--slider-thumb-radius: 0px;*/
+	--slider-thumb-radius: 0px;
 
-	--font-text-theme: 1.2rem "Fira Sans", sans-serif;
-	--callout-border-opacity: 0;
+	--radius-s: 4px;
+	--radius-m: 8px;
+	--radius-l: 12px;
+	--radius-xl: 16px;
+
+	--font-text-theme: Noto Sans;
+	--callout-border-width: 2px;
+	--callout-border-opacity: 1;
 
 	--list-indent: 2.25em;
 	--list-indent-editing: 1.5em;
@@ -21,13 +29,62 @@ body {
 	--background-modifier-hover: rgba(var(--mono-rgb-100), 0.08);
 	--nav-item-background-active: rgba(var(--mono-rgb-100), 0.15);
 
+	--callout-border-width: var(--divider-width);
+	--callout-border-opacity: 0.5;
+
+	--list-indent: 2.25em;
+	--list-indent-editing: 1em;
+	--list-indent-source: 0;
+	--list-spacing: 0.2em;
+
+
+	/* Headings */
+	--heading-color: hsl(
+		var(--accent-h) 
+		calc(var(--accent-s) * 0.45) 
+		calc(var(--accent-l) * 0.45)
+	);
 	--inline-title-size: 2.4em;
+	--inline-title-weight: var(--font-black);
 	--h1-size: 2em;
-	--h2-size: 1.8em;
-	--h3-size: 1.6em;
-	--h4-size: 1.4em;
+	--h1-weight: var(--font-bold);
+	--h1-color: var(--heading-color);
+
+	--h2-size: 1.65em;
+	--h2-weight: var(--font-normal);
+	--h2-color: var(--heading-color);
+
+	--h3-size: 1.4em;
+	--h3-weight: var(--font-normal);
+	--h3-color: var(--heading-color);
+
+	--h4-size: 1.2em;
+	--h4-weight: var(--font-normal);
+	--h4-color: var(--heading-color);
+
 	--h5-size: 1.2em;
-	--h6-size: 1em;
+	--h5-weight: var(--font-light);
+	--h5-color: var(--heading-color);
+
+	--h6-size: 1.1em;
+	--h6-weight: var(--font-light);
+	--h6-color: var(--heading-color);
+
+
+	/* Font */
+	--font-text-theme: Open Sans serif;
+
+	--font-thin: 100;
+	--font-extralight: 200;
+	--font-light: 300;
+	--font-normal: 400; 
+	--font-medium: 500;
+	--font-semibold: 600; 
+	--font-bold: 700;
+	--font-extrabold: 800; 
+	--font-black: 900;
+
+	--bold-color: var(--color-accent-2);
 }
 
 .theme-dark {
@@ -51,18 +108,30 @@ body {
 	--color-purple: #a882ff;
 	--color-pink-rgb: 250, 153, 205;
 	--color-pink: #fa99cd;
-	--color-base-00: rgb(30, 30, 30);
-	--color-base-05: rgb(33, 33, 33);
-	--color-base-10: rgb(36, 36, 36);
-	--color-base-20: rgb(39, 39, 39);
-	--color-base-25: rgb(42, 42, 42);
-	--color-base-30: rgb(54, 54, 54);
-	--color-base-35: rgb(63, 63, 63);
-	--color-base-40: rgb(85, 85, 85);
-	--color-base-50: rgb(102, 102, 102);
-	--color-base-60: rgb(153, 153, 153);
-	--color-base-70: rgb(179, 179, 179);
-	--color-base-100: rgb(218, 218, 218);
+	--color-base-00: #283035;
+	--color-base-05: #30393f;
+	--color-base-10: #39454b;
+	--color-base-20: #434f55;
+	--color-base-25: #4e5b63;
+	--color-base-30: #57636c;
+	--color-base-35: #5e6a74;
+	--color-base-40: #64727c;
+	--color-base-50: #73828d;
+	--color-base-60: #e6ded1
+	--color-base-70: #e6ded1;
+	--color-base-100: #e6ded1;
+	/*--color-base-00: rgb(40, 40, 40);
+	--color-base-05: rgb(43, 43, 43);
+	--color-base-10: rgb(46, 46, 46);
+	--color-base-20: rgb(49, 49, 49);
+	--color-base-25: rgb(52, 52, 52);
+	--color-base-30: rgb(64, 64, 64);
+	--color-base-35: rgb(73, 73, 73);
+	--color-base-40: rgb(95, 95, 95);
+	--color-base-50: rgb(112, 112, 112);
+	--color-base-60: rgb(163, 163, 163);
+	--color-base-70: rgb(189, 189, 189);
+	--color-base-100: rgb(210, 210, 210);*/
 	--color-accent-hsl: var(--accent-h),
 		var(--accent-s),
 		var(--accent-l);
@@ -101,6 +170,7 @@ body {
 
 .theme-light {
 	color-scheme: light;
+
 	--highlight-mix-blend-mode: darken;
 	--mono-rgb-0: 255, 255, 255;
 	--mono-rgb-100: 40, 40, 40;
@@ -130,7 +200,7 @@ body {
 	--color-base-40: #c4bdb1;
 	--color-base-50: #aca69b;
 	--color-base-60: #aba59b;
-	--color-base-70: #747474;
+	--color-base-70: #5d5d5d;
 	--color-base-100: #222222;
 	--color-accent-hsl: var(--accent-h),
 		var(--accent-s),
@@ -187,7 +257,6 @@ body {
 }
 
 .inline-title {
-	color: #335b8a;
 	border-block-end: var(--divider-width) solid;
 	padding: 0.25em;
 }
@@ -205,38 +274,3 @@ body {
 	background-color: var(--color-base-50);
 	width: 2px
 }
-
-/*
-.child1 {
-	height: 1000px;
-	width: 1000px;
-}
-
-.child2 {
-	height: 1000px;
-	width: 10px;
-}
-
-.child3 {
-	height: 10px;
-	width: 1000px;
-}
-
-::-webkit-scrollbar {
-	width: 15px;
-	height: 15px; //this height is for when the scrollbar is in horizontal mode
-}
-
-::-webkit-scrollbar-track {
-	background: #ccc;
-}
-
-::-webkit-scrollbar-thumb {
-	border-radius: 0px;
-	background-color: #4c81cc;
-	border: 3px solid #ccc;
-}
-
-::-webkit-scrollbar-corner {
-	background-color: #ddd;
-}*/
