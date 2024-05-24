@@ -37,54 +37,55 @@ body {
 	--list-indent-source: 0;
 	--list-spacing: 0.2em;
 
-
 	/* Headings */
-	--heading-color: hsl(
+	--heading-color: #0f4761 /*hsl(
 		var(--accent-h) 
 		calc(var(--accent-s) * 0.45) 
 		calc(var(--accent-l) * 0.45)
-	);
-	--inline-title-size: 2.4em;
-	--inline-title-weight: var(--font-black);
-	--h1-size: 2em;
-	--h1-weight: var(--font-bold);
-	--h1-color: var(--heading-color);
-
-	--h2-size: 1.65em;
-	--h2-weight: var(--font-normal);
-	--h2-color: var(--heading-color);
-
-	--h3-size: 1.4em;
-	--h3-weight: var(--font-normal);
-	--h3-color: var(--heading-color);
-
-	--h4-size: 1.2em;
-	--h4-weight: var(--font-normal);
-	--h4-color: var(--heading-color);
-
-	--h5-size: 1.2em;
-	--h5-weight: var(--font-light);
-	--h5-color: var(--heading-color);
-
-	--h6-size: 1.1em;
-	--h6-weight: var(--font-light);
-	--h6-color: var(--heading-color);
-
-
-	/* Font */
+	);*
+	
+	//* Font */
 	--font-text-theme: Open Sans serif;
-
+	
 	--font-thin: 100;
 	--font-extralight: 200;
 	--font-light: 300;
-	--font-normal: 400; 
+	--font-normal: 400;
 	--font-medium: 500;
-	--font-semibold: 600; 
+	--font-semibold: 600;
 	--font-bold: 700;
-	--font-extrabold: 800; 
+	--font-extrabold: 800;
 	--font-black: 900;
+	
+	--h1-size: 2.1em;
+	--h1-weight: var(--font-normal);
+	--h1-color: #0f4761;
 
-	--bold-color: var(--color-accent-2);
+	--h2-size: 1.4em;
+	--h2-weight: var(--font-normal);
+	--h2-color: #0f4761;
+
+	--h3-size: 1.2em;
+	--h3-weight: var(--font-normal);
+	--h3-color: #0f4761;
+
+	--h4-size: 1.2em;
+	--h4-weight: var(--font-normal);
+	--h4-color: #0f4761;
+
+	--h5-size: 1.2em;
+	--h5-weight: var(--font-light);
+	--h5-color: #0f4761;
+
+	--h6-size: 1.1em;
+	--h6-weight: var(--font-light);
+	--h6-color: #0f4761;
+
+	--inline-title-size: 2.5em;
+	--inline-title-weight: var(--font-black);
+	--inline-title-color: #000000
+
+	/*--bold-color: var(--color-accent-2);*/
 }
 
 .theme-dark {
@@ -256,10 +257,10 @@ body {
 	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
 }
 
-.inline-title {
+/*.inline-title {
 	border-block-end: var(--divider-width) solid;
 	padding: 0.25em;
-}
+}*/
 
 ::-webkit-scrollbar {
 	width: 14px;
