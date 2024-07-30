@@ -1,5 +1,3 @@
-
-
 body {
 	/*--radius-s: 0px;
 	--radius-m: 0px;
@@ -47,15 +45,16 @@ body {
 	--indentation-guide-source-indent: 0.25em;
 
 	/* Headings */
-	--heading-color: #0f4761 /*hsl(
+	--heading-color: #0f4761
+		/*hsl(
 		var(--accent-h) 
 		calc(var(--accent-s) * 0.45) 
 		calc(var(--accent-l) * 0.45)
 	);*
 	
 	//* Font */
-	--font-text-theme: Open Sans serif;
-	
+		--font-text-theme: Open Sans serif;
+
 	--font-thin: 100;
 	--font-extralight: 200;
 	--font-light: 300;
@@ -65,7 +64,7 @@ body {
 	--font-bold: 700;
 	--font-extrabold: 800;
 	--font-black: 900;
-	
+
 	--h1-size: 2em;
 	--h1-weight: var(--font-bold);
 	--h1-line-height: 1.5em;
@@ -105,6 +104,23 @@ body {
 
 .theme-dark {
 	color-scheme: dark;
+
+	--h1-color: #1e91c7;
+	--h2-color: #1eb0c7;
+	--h3-color: #1ec7c4;
+	--h4-color: #1ec7bc;
+	--h5-color: #1ec7a2;
+	--h6-color: #1ec78f;
+	--inline-title-color: #ffffff;
+
+	--bg-dark: #30393f;
+	--bg-darker: #283035;
+	--background-primary: var(--bg-dark);
+	--background-primary-alt: var(--bg-dark);
+	--background-secondary: var(--bg-darker);
+	--background-secondary-alt: var(--bg-darker);
+	--titlebar-background-focused: var(--bg-darker);
+
 	--highlight-mix-blend-mode: lighten;
 	--mono-rgb-0: 0, 0, 0;
 	--mono-rgb-100: 255, 255, 255;
@@ -124,7 +140,8 @@ body {
 	--color-purple: #a882ff;
 	--color-pink-rgb: 250, 153, 205;
 	--color-pink: #fa99cd;
-	--color-base-00: #283035;
+
+	/* --color-base-00: #283035;
 	--color-base-05: #30393f;
 	--color-base-10: #39454b;
 	--color-base-20: #434f55;
@@ -133,21 +150,9 @@ body {
 	--color-base-35: #5e6a74;
 	--color-base-40: #64727c;
 	--color-base-50: #73828d;
-	--color-base-60: #e6ded1
-	--color-base-70: #e6ded1;
-	--color-base-100: #e6ded1;
-	/*--color-base-00: rgb(40, 40, 40);
-	--color-base-05: rgb(43, 43, 43);
-	--color-base-10: rgb(46, 46, 46);
-	--color-base-20: rgb(49, 49, 49);
-	--color-base-25: rgb(52, 52, 52);
-	--color-base-30: rgb(64, 64, 64);
-	--color-base-35: rgb(73, 73, 73);
-	--color-base-40: rgb(95, 95, 95);
-	--color-base-50: rgb(112, 112, 112);
-	--color-base-60: rgb(163, 163, 163);
-	--color-base-70: rgb(189, 189, 189);
-	--color-base-100: rgb(210, 210, 210);*/
+	--color-base-60: #e6ded1 --color-base-70: #e6ded1;
+	--color-base-100: #e6ded1; */
+
 	--color-accent-hsl: var(--accent-h),
 		var(--accent-s),
 		var(--accent-l);
@@ -194,12 +199,6 @@ body {
 	--h4-color: #1a7ead;
 	--h5-color: #1e91c7;
 	--h6-color: #22a4e0;
-	/*--h1-color: #f85552;
-	--h2-color: #f57d26;
-	--h3-color: #bf983d;
-	--h4-color: #899c40;
-	--h5-color: #5a93a2;
-	--h6-color: #b87b9d;*/
 	--inline-title-color: #000000;
 
 	--highlight-mix-blend-mode: darken;
@@ -265,14 +264,16 @@ body {
 	--shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
 		0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
 		0px 30px 90px rgba(0, 0, 0, 0.2);
-	
+
 }
 
 .cm-s-obsidian .cm-line.HyperMD-header {
-	padding: 0.5em 0em 0.25em 0em; /*Top, Right, Bottom, Left*/
+	padding: 0.5em 0em 0.25em 0em;
+	/*Top, Right, Bottom, Left*/
 }
 
-.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
 	display: none;
 }
 
