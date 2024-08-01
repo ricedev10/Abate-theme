@@ -128,10 +128,10 @@ body {
 	--color-red: #fb464c;
 	--color-orange-rgb: 233, 151, 63;
 	--color-orange: #e9973f;
-	--color-yellow-rgb: 224, 222, 113;
-	--color-yellow: #e0de71;
+	--color-yellow-rgb: 230, 227, 74;
+	--color-yellow: rgb(255, 251, 0);
 	--color-green-rgb: 68, 207, 110;
-	--color-green: #44cf6e;
+	--color-green: rgb(68, 207, 110);
 	--color-cyan-rgb: 83, 223, 221;
 	--color-cyan: #53dfdd;
 	--color-blue-rgb: 2, 122, 255;
@@ -140,6 +140,13 @@ body {
 	--color-purple: #a882ff;
 	--color-pink-rgb: 250, 153, 205;
 	--color-pink: #fa99cd;
+
+	/* Text of highlight to yellow */
+	--text-highlight-bg-rgb: var(--color-yellow-rgb);
+	--text-highlight-bg: rgba(var(--color-yellow-rgb), 0.4);
+
+	/* Text of bold thicker (less noticable on dark theme) */
+	--bold-modifier: 300;
 
 	/* --color-base-00: #283035;
 	--color-base-05: #30393f;
